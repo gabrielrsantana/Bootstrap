@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- atividade 1 24-08-2021 -->
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ################### boostrap 4.6 ##################-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- #####################boostrap fim ##########-->
+  <title>aula 2atividade boostrap</title>
+  <!-- 
+      Crie uma pagina sobre "bootstrap" seguindo os seguintes critérios:
+1. A visualização da página deve ser mantida para Telas com tamanho maior ou igual a 768px;
+2. você deve incluir uma tabela com números, estimativas... (fictício ou não), apenas para praticarmos as classes de tabelas ;)
+3. Deve conter um formato de lista que exiba em uma nova guia(tab) parágrafos tratando sobre o assunto.
+4. No texto apresentado na guia do item 3, vc deve deixar o texto justificado.
+5. No ultimo paragrafo, vc deve colocar todas as primeiras letras de cada palavra em maiúsculo.
+6. Crie também uma lista instruindo ao usuário o que cada aviso do texto corresponde. Exemplo:
+   - vermelho - atenção vc ja está nesta pagina por muito tempo.
+   - amarelo - você precisa descançar... -->
+
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div class="row bg-primary text-center">BOOSTRAP um pouco sobre</div>
+    <h1>Usando bootstrap</h1>
+    <br>
+    <h3>polulação cidade x</h3>
+    <!-- telas acima 768px -->
+    <div class="col-md-8">
+      <!-- tabela com numeros   -->
+      <table class="table table-responsive-md table-hover">
+        <!--table-danger table-hover">  table-striped é o tema da tabelas..tem varios  table-striped é o tema da tabelas..tem varios-->
+        <thead class="thead-light">
+          <tr>
+            <th>codigo</th>
+            <th>idosos</th>
+            <th>Homens</th>
+            <th>mulheres</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="table-active ">
+            <th>1</th>
+            <td>2850 </td>
+            <td>2320</td>
+            <td>1132</td>
+          </tr>
+          <tr class="table-primary">
+            <th>2</th>
+            <td>2250 </td>
+            <td>2320</td>
+            <td>1132</td>
+          </tr>
+          <tr class="table-secondary">
+            <th>3</th>
+            <td>2450 </td>
+            <td>2320</td>
+            <td>1132</td>
+          </tr>
+          <tr class="table table-success">
+            <th>4</th>
+            <td>2850 </td>
+            <td>2320</td>
+            <td>1132</td>
+          </tr>
+          <tr class="table-info">
+            <th>5</th>
+            <td>2750 </td>
+            <td>2320</td>
+            <td>1132</td>
+          </tr>
+          <tr class="table-warning">
+            <th>6</th>
+            <td>2340 </td>
+            <td>2340</td>
+            <td>1132</td>
+          </tr>
+          <tr class="table-dark">
+            <th>7</th>
+            <td>1950 </td>
+            <td>1320</td>
+            <td>1132</td>
+          </tr>
+          <tr class="table-light">
+            <th>8</th>
+            <td>3050 </td>
+            <td>1720</td>
+            <td>1132</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <!-- FIM LIST-GROUP -->
+      <br>
+      <br>
+      <!-- <h4>comportamento javascript</h4> -->
+      <h4>Click para saber o total</h4>
+      <!-- DIV ROW INICIO -->
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <!--Role tab,fica na lateral ,como menu-->
+            <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Total Codigo 1</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-profile" role="tab"     aria-controls="profile">Total Codigo 2</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-messages" role="tab"    aria-controls="messages">Total Codigo 3</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings" role="tab"    aria-controls="settings">Total Codigo 4</a>
+          </div>
+        </div>
+        <!-- div com os conteudos para cada TAB-->
+        <!--  LISTA COM OS TEXTOS PARA MOSTRAR  com CORES-->
+        <div id="minhaLista" class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <!-- show active faz ficar selecionado -->
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              Cidade com codigo 1: total 6.302 pessoas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+              labore at earum facere! Corrupti aperiam fugit illum deleniti delectus eveniet doloremque unde, ratione
+              impedit est dicta ullam, sed, dolorem veritatis?
+              Quae bla bla blasssunt totam incidunt atque, ratione molestias ut, optio culpa voluptate, facere pariatur
+              qui a quas? Voluptates, optio autem quod quo, natus neque blanditiis accusamus est unde corrupti
+              perspiciatis quis!
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Cidade com
+              codigo 2: total 5.702 pessoas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo labore at
+              earum facere! Corrupti aperiam fugit illum deleniti delectus eveniet doloremque unde, ratione impedit est
+              dicta ullam, sed, dolorem veritatis?
+              Quae bla bla blasssunt totam incidunt atque, ratione molestias ut, optio culpa voluptate, facere pariatur
+              qui a quas? Voluptates, optio autem quod quo, natus
+
+            </div>
+            <!-- justificar texto no item 3 -->
+            <div class="tab-pane fade text-justify" id="list-messages" role="tabpanel"
+              aria-labelledby="list-messages-list">Cidade com codigo 3: total 5.903 pessoas. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quo labore at earum facere! Corrupti aperiam fugit illum deleniti delectus
+              eveniet doloremque unde, ratione impedit est dicta ullam, sed, dolorem veritatis?
+              Quae bla bla blasssunt totam incidunt atque, ratione molestias ut, optio culpa voluptate, facere pariatur
+              qui a quas? dffg blansj huehsy soso isoisVoluptates, optio autem quod quo, natus
+
+            </div>
+            <!-- 5. No ultimo paragrafo, vc deve colocar todas as primeiras letras de cada palavra em maiúsculo.  -->
+            <div class="tab-pane fade text-capitalize" id="list-settings" role="tabpanel"
+              aria-labelledby="list-settings-list">Cidade com codigo 4: total 6.032 pessoas.Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Quo labore at earum facere! Corrupti aperiam fugit illum deleniti delectus
+              eveniet doloremque unde, ratione impedit est dicta ullam, sed, dolorem veritatis?
+              Quae bla bla blasssunt totam incidunt atque, ratione molestias ut, optio culpa voluptate, facere pariatur
+              qui a sgvf gfg fdg fdg fgdquas? Voluptates, optio autem quod quo, natus bla bla bla.
+
+            </div>
+            <!--DIV DO TAB-->
+          </div>
+        </div> <!--DIV minhaLista-->
+        <!--FIM LISTA COM OS TEXTOS div minha-lista-->
+        <br>
+        <br>
+       
+       <!-- ###################### alterar a lista 2 para mostra o conteudo -->
+       
+       <section class="col-4">
+            <div class="list-group" id="list-tab2" role="tablist">
+              <!--TABS DAS CORES ALERT-->
+              <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-home2" role="tab" aria-controls="home">vermelho</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-profile2" role="tab"     aria-controls="profile">amarelo</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-messages2" role="tab"    aria-controls="messages">Azul</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-settings2" role="tab"    aria-controls="settings">Verde</a>
+            </div>
+       </section>
+      <!-- div com os conteudos para cada TAB-->
+      <!--  LISTA 2 COM OS alerts-->
+
+      <!-- container para itens da 2 lista com alerts -->
+    
+      <section class="row">
+          <div id="minhaLista2" class="col">
+            <div class="tab-content" id="nav-tabContent">
+              <!-- show active faz ficar selecionado -->
+              <div class="tab-pane fade show active" id="list-home2" role="tabpanel" aria-labelledby="list-home-list">
+                <p class="alert alert-danger" role="alert">
+                  atenção vc ja está nesta pagina por muito tempo.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="list-profile2" role="tabpanel" aria-labelledby="list-profile-list">
+                <p class="alert alert-warning" role="alert">
+                  você precisa descançar...
+                </p>             
+              </div>
+              <div class="tab-pane fade text-justify" id="list-messages2" role="tabpanel"
+                aria-labelledby="list-messages-list">
+                <p class="alert alert-primary" role="alert">
+                  relaxe...
+                </p>  
+              </div>
+              <!-- 5. No ultimo paragrafo, vc deve colocar todas as primeiras letras de cada palavra em maiúsculo.  -->
+              <div class="tab-pane fade text-capitalize" id="list-settings2" role="tabpanel"
+                aria-labelledby="list-settings-list">
+                <p class="alert alert-success col-11" role="alert">
+                  Sucesso!
+                </p>  
+              </div>
+              <!--DIV DO TAB-->
+            </div>
+          </div> <!--DIV minhaLista-->
+      </section>
+   
+      <!-- FIM @ LISTA COM ALERTS   -->
+      
+      </div><!--div row fim-->
+
+      
+     
+    </div> <!-- FIm DIV-COL-MD-8 -->
+   
+  </div><!-- div container -->
+
+
+
+  <!---- scripts necessarios em ordem bootstrap 4.6 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <!-- fim bootstrap -->
+  <!-- javads-->
+  <script>
+    $('#minhaLista a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
+  </script>
+</body>
+
+</html>

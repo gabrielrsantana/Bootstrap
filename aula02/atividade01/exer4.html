@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+   
+    <br>
+    <!--  usando botoes
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+     -->
+
+     <!-- USANDO ROLE PARA ACESSIBILIDADE -->
+     <a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Botão</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+
+<br>
+<br>
+<!-- COM OUTLINE FICA TRANSPARENCE e a cor aparece quando mouse passa-->
+<h3>usando class bt-outline</h3>
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button>
+<!-- fim botore -->
+<br>
+<!-- PLUGIN DE BOTAO -->
+<h4>usando btn-group-toggle</h4>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+      <input type="radio" name="options" id="option1" autocomplete="off" checked> Ativo
+    </label>
+    <label class="btn btn-secondary">
+      <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+    </label>
+    <label class="btn btn-secondary">
+      <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+    </label>
+  </div>
+
+  <br><br>
+  <h4>botoes grandes</h4>
+  <button type="button" class="btn btn-primary btn-lg">Botão grande</button>
+<button type="button" class="btn btn-secondary btn-lg">Botão grande</button>
+<br>
+<h4>botoes grandes,normais,botao pequeno</h4>
+<button type="button" class="btn btn-primary btn-lg">Botão grande</button>
+<button type="button" class="btn btn-primary">Botão normal</button>
+<button type="button" class="btn btn-primary btn-sm">Botão pequeno</button>
+<br>
+<h3>botao lock level btn-block</h3>
+<button type="button" class="btn btn-primary btn-lg btn-block">Botão block-level</button>
+<button type="button" class="btn btn-secondary btn-lg btn-block">Botão block-level</button>
+Podemos ainda criar um botão que não ocupe um bloco inteiro do tamanho do elemento pai:
+
+<div style="width: 500px;">
+<button type="button" class="btn btn-primary btn-lg btn-block">Botão block-level</button>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>   
+</body>
+</html>
