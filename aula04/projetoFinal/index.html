@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- requisitos especificos
+Jquery : utilizar um scroll que a partir de  400px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.
+JavaScript: validações.
+Css: Estilizar o rodapé usando exclusivamente css.
+HTML: Utilizar <aside> e <article> -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ################### boostrap 4.6 ##################-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- #####################boostrap fim ##########-->
+  <!-- CND PARA OS ICONES -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- private CSS -->
+  <link rel="stylesheet" href="./css/naturastyle.css">
+  <title>Soul Natura</title>
+</head>
+<body>
+  <section class="container-fluid">
+    <header id="cabecalho" class="row">
+      <!-- brocolis logo,com nav BRAND -->
+      <a class="navbar-brand" href="index.html"><img id="logo-brocolis" class="img-fluid" src="./imagens/brocolis.png"
+          alt="brocolis"></a>
+      <!-- soul Natura logo -->
+      <img class="img-fluid" src="./imagens/SoulcodenaturaNome.png" alt="nomelogo">
+      <!-- logo fruta 
+    <img id="logofruta" class="img-fluid" src="./imagens/logo-frutas.png" alt="logo"> -->
+    </header>
+    <!--############## barra de navegacao  #############  -->
+    <div  class="row">
+      <nav id="barra-navegacao" class="navbar navbar-expand-lg col-12 ">
+        <!-- NAV-EXPAND-LG  , PARA TELAS GRANDES EXPANDE O MENU, PORQUE BOOTSTRAP E "MOBILE FIRST"-->
+        <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+        <!-- botao hamburguer -->
+        <button id="botao-hamburguer" class="navbar-toggler border-primary" type="button" data-toggle="collapse"
+          data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+          aria-label="Alterna navegação">
+          <!-- icone hamburguer -->
+          <span class="navbar-toggler-icon"><i class="bi bi-list text-white"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  text-white" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Ação</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Algo mais aqui</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-white-50" href="#">Desativado</a>
+            </li>
+          </ul>
+          <!-- formul de peesquisa -->
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-warning my-2 my-sm-0" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- ############### FIM BARRA DE NAVEGACAO ############################-->
+    </div>
+    <!--row-->
+    <div class="row">
+     <!--################ MAIN  principal ###########################-->
+      <main id="principal" class="col-md-9">
+        <section>
+          <article class="col col-md6 text-justify my-5">Estudos recentes vêm analisando o consumo crescente de alimentos ultraprocessados na alimentação diária, tal análise deve-se ao aumento do número de pessoas com excesso de peso e o desenvolvimento de doenças crônicas não transmissíveis. O aumento da produção e consumo de produtos processados e ultraprocessados como, doces, refrigerantes, produtos com maior densidade energética, ricos em sódio, gorduras, açúcar e pobres em nutrientes vem sendo objeto de vários estudos tanto em caráter nacional quanto internacional. Para tal é importante saber a diferença entre esses alimentos.
+
+          </article>
+          <article class="col col-md6 text-justify my-5">Estudos recentes vêm analisando o consumo crescente de alimentos ultraprocessados na alimentação diária, tal análise deve-se ao aumento do número de pessoas com excesso de peso e o desenvolvimento de doenças crônicas não transmissíveis. O aumento da produção e consumo de produtos processados e ultraprocessados como, doces, refrigerantes, produtos com maior densidade energética, ricos em sódio, gorduras, açúcar e pobres em nutrientes vem sendo objeto de vários estudos tanto em caráter nacional quanto internacional. Para tal é importante saber a diferença entre esses alimentos.
+            
+          </article>
+          <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid doloribus repellendus sequi ipsam cumque sit cupiditate mollitia! Dolore nemo quod mollitia laborum accusantium consequuntur incidunt, quibusdam omnis tempora error voluptatum.
+          Praesentium debitis illo quo explicabo doloremque! Iste doloremque tempore sunt similique. Vel, exercitationem. Libero aliquid eius sint voluptas nobis adipisci ad magnam minima laboriosam, dolorum praesentium alias. Voluptatum, animi autem.
+          Reiciendis minus similique tempore accusantium deserunt accusamus, eius vitae quidem id suscipit ad sapiente ab explicabo voluptate impedit a vero facilis molestiae quisquam esse repellat fugit. Sit at itaque ad.
+          Nesciunt autem dicta dolor libero ducimus, cum fugiat quia error repudiandae, quasi veniam veritatis. Distinctio repudiandae atque rem architecto cumque, minus corporis voluptatibus accusantium. Natus eaque quos fuga ad aspernatur!
+          Veniam, earum, dolore aliquam iusto laborum ea perspiciatis nostrum eligendi qui explicabo debitis modi provident distinctio, tenetur consequatur molestias esse atque amet hic officia molestiae repudiandae temporibus illum! Repellendus, esse.
+          Rerum sint nemo architecto est illo dicta illum quaerat enim eligendi, temporibus voluptatem distinctio exercitationem eveniet dolorem assumenda neque maxime fuga ea dolore! Laborum temporibus, perspiciatis debitis sunt excepturi ipsam.
+          Inventore consequatur animi distinctio fugiat sint temporibus voluptate officiis incidunt iusto ipsa quaerat recusandae quos at similique praesentium nulla labore, ex est, nemo, amet maiores soluta. Totam illum numquam quibusdam.
+          Nam facilis sint fuga laborum rerum provident modi alias illum! Delectus impedit excepturi accusantium error voluptatem exercitationem ab temporibus, nihil tempore placeat voluptas quae necessitatibus aspernatur rerum perferendis similique numquam.
+          Illum nostrum quo laborum unde reiciendis beatae modi sequi quidem quod, labore obcaecati aliquid blanditiis nam eos tenetur officia, inventore eligendi dicta, quaerat quos error molestias incidunt? Impedit, ut quasi?
+          Minus provident expedita repellendus aspernatur necessitatibus tenetur autem vero. Reiciendis explicabo repellat, excepturi tenetur natus numquam error sunt, libero maiores repellendus quidem rem eum, cupiditate iusto rerum quo voluptate distinctio!
+          Accusamus perferendis, quo alias iure magnam sit dolor vel molestias quis soluta nesciunt nisi esse veritatis, velit officia qui rem perspiciatis laboriosam ab repellendus aliquam! Rem quod amet eum doloremque.
+          Quod, doloribus quis! Consequatur, iure nobis autem at tempora dolorem debitis, provident facere nisi sed rem maiores, esse neque quibusdam corporis eaque. Dolor in aliquam possimus ipsa, quae odit repellat.
+          Sed necessitatibus reiciendis dolorum sapiente tenetur adipisci. Harum exercitationem aliquam officiis sequi a repellat quibusdam rerum nesciunt facilis architecto suscipit, distinctio necessitatibus, earum alias reiciendis vel assumenda dolores quae enim.
+          Aperiam iusto sequi voluptate omnis id fuga est temporibus nihil provident, exercitationem culpa quasi corrupti harum aliquam, sint cumque explicabo, et saepe amet doloribus reprehenderit illum iure. Labore, ducimus reiciendis.
+          Harum dolorem ex sed laboriosam quaerat at, quam esse, dolorum temporibus perspiciatis maiores deserunt aut? Repudiandae ut error, dolor, assumenda illum cum blanditiis autem aliquid tempore vel, voluptate porro iste!
+          Iure magnam sapiente temporibus sed mollitia? Odio, quasi. Corporis perspiciatis ducimus debitis harum quis fugit sunt natus numquam, totam, quisquam amet libero dolorem ex tempore, consectetur alias et modi culpa!
+          Molestiae iusto nostrum aliquid accusantium laboriosam quaerat rem magnam aliquam ex rerum, quo qui inventore labore repudiandae error pariatur, suscipit, mollitia iure libero! Sed quo nesciunt, ratione consequatur labore accusantium.
+          Maiores molestias exercitationem autem provident repellat. Necessitatibus inventore optio vitae quod, minus dignissimos voluptatem ea ut omnis totam enim labore, consequuntur vero a doloribus deleniti corporis, quam porro excepturi itaque!
+          Quidem animi accusamus dolore exercitationem enim corporis nam repudiandae, quibusdam iste quas quisquam, sed eius harum delectus officia tempore fugit, non sit quod velit amet illo? Dolor atque blanditiis magni!
+          Nisi error voluptate quo totam aut ipsam sint ducimus omnis beatae magni. Assumenda sed optio reiciendis sit dignissimos a mollitia? Nulla, earum necessitatibus. Quae, veniam atque! Dicta eos assumenda doloremque.
+          Unde suscipit fugit dolores, perferendis ab eius? Reprehenderit, dignissimos harum, odio provident minima atque reiciendis blanditiis facere quis eveniet aspernatur, corrupti doloremque eius esse tempore dicta inventore quasi saepe aperiam!
+          Velit veniam incidunt nam inventore provident aliquid non expedita? Modi, et quis maxime iste at quos repellendus omnis. Repellendus accusantium fuga aperiam dolorum deserunt nesciunt fugit nostrum architecto velit error!
+          Placeat ducimus vel repellat excepturi exercitationem tenetur sunt quo. Eum, maiores vel illum odio molestias, commodi necessitatibus nulla quas temporibus aliquam architecto laborum consequatur rerum officiis repudiandae, est facere ab.
+          Molestias et sunt sed nam adipisci obcaecati nesciunt libero officiis sit laborum provident quibusdam est quos, quo ullam similique consequatur suscipit laudantium consectetur nulla placeat nobis maxime ipsum iste? Sunt.
+          Nisi perferendis quibusdam placeat numquam dolorem sint iusto illum distinctio illo adipisci. Doloremque omnis, odio dolore qui exercitationem vitae, earum aliquam illum obcaecati dolorem veritatis rerum quidem rem quibusdam natus.
+          Corrupti minus, fugit culpa molestiae hic nam cupiditate autem qui non obcaecati vero. Quae eos accusantium fugit expedita vel odit, velit nisi totam, rerum cum iste ea accusamus nam dolorem.
+          Obcaecati blanditiis facilis dolor eos odio. Veritatis doloremque corporis dignissimos consectetur possimus nulla nisi autem. Ipsam quibusdam eos accusantium nemo sunt voluptatum omnis illum animi sed inventore, culpa autem reiciendis?
+          Cumque eaque culpa architecto optio ad praesentium eveniet nisi aliquam officia quidem, voluptas possimus dolorem quam laborum provident, aliquid ipsum fugit veritatis ex similique a autem voluptates. Placeat, autem doloremque?
+          Praesentium laudantium libero, accusantium quam consectetur quis nulla cupiditate quo laboriosam id. Sed blanditiis beatae itaque? Repellendus hic vel quidem reprehenderit illum eius aliquid, distinctio, ut tempore, expedita neque debitis!
+          Expedita, nemo excepturi numquam voluptates delectus quidem odit reprehenderit obcaecati illum voluptatem. Dolorem quo, corrupti voluptas perferendis excepturi laborum, eveniet ab pariatur suscipit incidunt, officiis ipsam et voluptatum officia. Dicta!
+        </article>
+        </section>
+        <!-- CARDS DECK -->
+        <div class="card-deck my-3">
+          <div class="card">
+            <img class="card-img-top" src="./imagens/img-fake.bmp" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./imagens/img-fake.bmp" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="./imagens/img-fake.bmp" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+
+
+
+        </div>
+        <!-- FIM cards-deck-->
+      </main>
+      <!-- ################# FIM MAIN ################################-->
+      <aside id="lateral" class="col-md-3">
+        <!-- news -->
+        <ul>
+          <li><a href="">xxx</a></li>
+        </ul>
+        <ul>
+          <li><a href="">ddd</a></li>
+        </ul>
+        <ul>
+          <li><a href="">fff</a></li>
+        </ul>
+        <ul>
+          <li><a href="">ttt</a></li>
+        </ul>
+        <ul>
+          <li><a href="">yyy</a></li>
+        </ul>
+        <!-- fim news -->
+      </aside>
+
+    </div><!-- row MAIN e ASIDE-->
+    <footer id="rodape" class="row fixed-bottom">footer
+
+    </footer>
+  </section>
+  <!-- scripts necessarios em ordem bootstrap 4.6 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+  <!-- fim bootstrap -->
+</body>
+
+</html>

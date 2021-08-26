@@ -1,0 +1,31 @@
+#barra-navegacao{
+  background-image: linear-gradient(to top,rgb(140, 150, 55),rgb(59, 150, 89));
+}
+
+/* header */
+#cabecalho{
+  height: 25vh;
+  background-image: linear-gradient(to right,#ffe18ed4, #7ec566);
+  
+}
+#lateral{
+  background-color: rgba(221, 240, 96, 0.576);
+}
+#logo-brocolis{
+  height: 80%;
+  
+}
+#logofruta{
+  height: 100%;
+}
+/* MAIN */
+#principal{
+  background-image: linear-gradient(to bottom,#f7f3e5, rgba(255, 225, 0, 0.529));
+}
+/* FOOTER */
+#rodape{
+  position: relative;
+  background-color: #D3AE48;
+  bottom:0;
+
+}
